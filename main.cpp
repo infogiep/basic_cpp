@@ -17,6 +17,8 @@ int main()
 	setlocale(LC_ALL, "Russian"); // задаём русский текст
 	system("chcp 1251"); // настраиваем кодировку консоли
 
+	//bool start = true;
+
 	//public:
 	//int x3;
 	//int size_1 = 10, size_2 = 3;
@@ -73,9 +75,16 @@ int main()
 		{
 			{
 				//Регистрация;
-				registry_chat();
 				cout << "registry_chat" << endl;
 				cout << " " << endl;
+				registry_chat regist;
+				//try {
+				regist.reg_user();
+				//}
+				//catch (exception& e)
+				//{
+				//	cout << e.what();
+				//}
 				break;
 			}
 
@@ -92,7 +101,7 @@ int main()
 			//Просто вход в chat
 			cout << "just_chat" << endl;
 			cout << " " << endl;
-			chat_menu();
+			//chat_menu();
 			break;
 		}
 		case 7:
@@ -102,6 +111,8 @@ int main()
 				//for (int j = 0; j < size_2; ++j)
 			//	delete[] arr[i];
 			//delete[] arr;
+
+			//start = false;
 
 		}
 		}
